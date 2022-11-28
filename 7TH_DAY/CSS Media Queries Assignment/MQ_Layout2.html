@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use media queries and box model to achieve the give MQ Layout</title>
+    <style>
+        #container {
+            width: 95%;
+            display: grid;
+            margin: 20px auto;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 90px 540px;
+            gap: 20px 50px;
+            grid-template-areas:
+                "b1 b1"
+                "b2 b3";
+        }
+
+        #container>div {
+            font-size: 30PX;
+            padding: 10px;
+
+        }
+
+        #container>div:nth-child(1) {
+            grid-area: b1;
+            background-color: #f7ff00;
+            font-size: 50px;
+            display: grid;
+            align-items: flex-end;
+            /* font-weight: bolder; */
+
+        }
+
+        #container>div:nth-child(2) {
+            grid-area: b2;
+            background-color: #ff0000;
+            color: #5a4d36;
+        }
+
+        #container>div:nth-child(3) {
+            grid-area: b3;
+            background-color: #00ff2a;
+            color: #5a4d36;
+        }
+
+        /* Small Screen */
+        @media all and (min-width:320px) and (max-width:479px) {
+            #container {
+                grid-template-columns: 1fr;
+                grid-template-rows: 70px 150px 150px;
+                gap: 20px;
+                grid-template-areas:
+                    "b1"
+                    "b2"
+                    "b3";
+            }
+
+            #container>div {
+                font-size: 20PX;
+                padding: 10px;
+            }
+
+            #container>div:nth-child(1) {
+                grid-area: b1;
+                font-size: 30px;
+            }
+
+            #container>div:nth-child(2) {
+                grid-area: b2;
+            }
+
+            #container>div:nth-child(3) {
+                grid-area: b3;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div>Navigation</div>
+        <div>LEFT BOX</div>
+        <div>RIGHT BOX</div>
+    </div>
+</body>
+
+</html>

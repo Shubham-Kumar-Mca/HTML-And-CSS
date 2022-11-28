@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESPONSIVE PRICING LAYOUT</title>
+    <style>
+        h1{
+            padding-top: 30px;
+        }
+        h1,
+        p {
+            text-align: center;
+            margin:10px auto;
+        }
+
+        p {
+            width: 45%;
+            font-size: 18px;
+            color: #7a7a7a;
+            text-align: center;
+        }
+
+        #container {
+            width: 70%;
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+
+        }
+
+        #container>div {
+            /* border: 1px solid red; */
+            text-align: center;
+            padding: 0 25px;
+            box-shadow: 0 0 8px 1px rgb(241, 240, 240);
+        }
+
+        #container>div>h1 {
+            margin-top: -30px;
+            margin-bottom: 20px;
+        }
+        
+
+        #container>div>p {
+            width: 90%;
+            margin-top: -20px;
+            font-size: 14px;
+            font-style: italic;
+        }
+
+        #container>div>p+p {
+            margin-top: 20px;
+            font-style: normal;
+            font-size: 19px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 13px 23px;
+            font-weight: bolder;
+            font-size: 16px;
+            background-color: white;
+            border: 1px solid #007aff;
+            color: #007aff;
+            border-radius: 10px;
+            margin-bottom: 22px;
+        }
+
+        #container>div:nth-child(1)>h1 {
+            color: #09ab78;
+        }
+
+        #container>div:nth-child(2)>h1 {
+            color: #f27e42;
+        }
+
+        #container>div:nth-child(2)>button {
+            background-color: #007aff;
+            color: white;
+        }
+
+        #container>div:nth-child(3)>h1 {
+            color: #4294f2;
+        }
+
+        /* Medium Screen */
+        @media all and (min-width:480px) and (max-width:720px) {
+
+            h1,
+            p {
+                text-align: center;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            p {
+                font-size: 14px;
+                color: #7a7a7a;
+            }
+
+            #container {
+                width: 70%;
+                margin: 40px auto;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 30px;
+                grid-template-areas:
+                    "d1 d2"
+                    "d3 d3";
+
+            }
+
+            #container>div>p+p {
+                font-size: 14px;
+            }
+
+            #container>div>h2 {
+                font-size: 20px;
+            }
+
+            #container>div>h1 {
+                font-size: 25px;
+                padding-bottom: 5px;
+            }
+
+            #container>div:nth-child(1) {
+                grid-area: d1;
+            }
+
+            #container>div:nth-child(2) {
+                grid-area: d2;
+            }
+
+            #container>div:nth-child(3) {
+                grid-area: d3;
+            }
+
+        }
+
+        /* Small Screen */
+        @media all and (min-width:320px) and (max-width:479px){
+            h1,
+            p {
+                text-align: center;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 10px;
+                color: #7a7a7a;
+            }
+
+            #container {
+                width: 70%;
+                margin: 40px auto;
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 30px;
+                /* grid-template-areas:
+                    "d1 d2"
+                    "d3 d3"; */
+
+            }
+
+            #container>div>p+p {
+                font-size: 10px;
+            }
+
+            #container>div>h2 {
+                font-size: 15px;
+                padding-bottom: 5px;
+            }
+
+            #container>div>h1 {
+                font-size: 20px;
+                padding-bottom: 10px;
+            }
+
+           button{
+            margin-top: 15px;
+            padding: 8px 15px;
+            font-weight: bolder;
+            font-size: 8px;
+            background-color: white;
+            border: 1px solid #007aff;
+            color: #007aff;
+            border-radius: 10px;
+            margin-bottom: 22px
+           }
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Choose a plane that right for <br> your business </h1>
+    <p>We collect reviwes from our users so you can get an honest opinion of what an experience with our website
+        are really likel</p>
+    <div id="container">
+        <div>
+            <h2>Start Plan</h2>
+            <h1>Free</h1>
+            <p>Per month</p>
+            <p>We collect reviwes from our users so you can get an honest opinion of what an experience with our
+                website.</p>
+            <button>Start Now</button>
+        </div>
+        <div>
+            <h2>Business Plan</h2>
+            <h1>$39.00</h1>
+            <p>Per month</p>
+            <p>We collect reviwes from our users so you can get an honest opinion of what an experience with our
+                website.</p>
+            <button>Start Now</button>
+        </div>
+        <div>
+            <h2>Premium Plan</h2>
+            <h1>$59.00</h1>
+            <p>Per month</p>
+            <p>We collect reviwes from our users so you can get an honest opinion of what an experience with our
+                website.</p>
+            <button>Start Now</button>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
