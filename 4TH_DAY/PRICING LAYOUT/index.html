@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: black;
+        }
+        #heading{
+            width: 90%;
+            height: 100vh;
+            background-color: white;
+            margin: 0px auto;
+            text-align: center;
+        }
+        h1{
+            padding: 20px 0px 15px 0px;
+        }
+        #heading > p{
+            color: #858484;
+            font-size: 16px;
+            margin-bottom: 80px;
+        }
+        #cards-section{
+            display: flex;
+        }
+        #cards-section{
+            width: 800px;
+            height: 360px;
+            margin: 0px auto;
+            
+
+            
+        }
+        .divInsideDiv{
+            box-shadow: 0px 0px 20px 0px rgb(221, 218, 218);
+            margin-left: 30px;
+            border-radius: 20px;
+            padding: 20px;
+        }
+        .divInsideDiv h1{
+            margin-top: -10px;
+        }
+        .fon{
+            margin-top: -10px;
+            font-size: 12px;
+            font-style: italic;
+        }
+        .gre >h1{
+            color: green;
+        }
+        .yel >h1{
+            color: orange;
+        }
+        .blu >h1{
+            color: blue;
+        }
+        button{
+            margin-top: 40px;
+            background-color: white;
+           padding: 10px 25px;
+           font-size: 20px;
+           font-weight: bolder;
+           border-radius: 10px;
+           border: 1px solid blue;
+           color: blue;
+        }
+        p{
+            font-size: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="heading">
+        <h1>Choose a plan that right for <br> your business</h1>
+        <p>
+          We collect reviews from our users so you can get an honest opinion of
+          what <br> an experience with our website are really like!
+        </p>
+    
+  
+        <!-- Cards section -->
+        <div id="cards-section">
+            <!-- This section should contain 3 children divs, each div should have h2,h1,p,p,button -->
+            <div class="divInsideDiv gre">
+                <h2>Starter Plan</h2>
+                <h1>Free</h1>
+                <p class="fon">Per month</p><br>
+                <p>We collect reviews from our usersso you can get an honest opinion of what an experience with our website</p>
+                <button>Start Now</button>
+            </div>
+            <div class="divInsideDiv yel">
+                <h2>Starter Plan</h2>
+                <h1>$39.00</h1>
+                <p class="fon">Per month</p><br>
+                <p>We collect reviews from our usersso you can get an honest opinion of what an experience with our website</p>
+                <button>Start Now</button>
+            </div>
+            <div class="divInsideDiv blu">
+                <h2>Starter Plan</h2>
+                <h1>$59.00</h1>
+                <p class="fon">Per month</p><br>
+                <p>We collect reviews from our usersso you can get an honest opinion of what an experience with our website</p>
+                <button>Start Now</button>
+            </div>
+            
+            
+        </div>
+    </div>
+</body>
+</html>
