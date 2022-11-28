@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build the given Study Lab using flex and its properties</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #navbar{
+            height: 60px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            box-shadow: 0 1px 6px 0px rgb(212, 211, 211);
+        }
+        #navbar>div:first-child{
+            padding: 12px 20px;
+            background-color: #9c5de7;
+            color: white;
+            margin-left: -120px;
+            
+            
+        }
+        #navbar>div:last-child{
+            display: flex;
+            width: 40%;
+            /* padding: 20px; */
+            justify-content: space-evenly;
+            margin-left: 50px;
+        }
+        #navbar>div:last-child>p{
+            font-weight: bolder;
+            font-size: 20px;
+        }
+        #navbar>div:last-child>p:first-child{
+            color:  #72a0fd ;
+        }
+
+        /*--------Body Part---------*/
+        #container{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #container>div:first-child{
+            width: 40%;
+            margin-top: 100px;
+        }
+        #container>div:first-child>p:first-child{
+            color: #72a0fd;
+            font-weight: bolder;
+        }
+        #container>div:first-child>h1{
+            margin-top: 10px;
+        }
+        #container>div:first-child>h1 + p{
+            margin-top: 30px;
+        }
+        #container>div:first-child>p {
+            color: #aaa9a9;
+            font-size: 20px;
+            line-height: 30px;
+        }
+        #container>div:first-child>div{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        #container>div:first-child>div>p{
+            font-size: 25px;
+        }
+        #container>div:first-child>div>img{
+            width: 30%;
+            margin-top: 20px;
+            margin-left: -30px;
+        }
+
+        /*---------Card----------*/
+        #container>div:last-child{
+            width: 50%;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+        #card>div{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 20px;
+        }
+        #card>div>div{
+            width: 35%;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 30px;
+            padding-bottom: 60px;
+            box-shadow: 0 0 5px 0 rgb(233, 231, 231);
+        }
+        #card>div>div>p{
+            margin-top: 20px;
+            font-size: 20px;
+            color: #aaa9a9;
+            line-height: 30px;
+        }
+        #card>div>div>img{
+            width: 100px;
+            border-radius: 50%;
+        }
+        
+       
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div id="navbar">
+        <div>
+            <h1>StudyLab</h1>
+        </div>
+        <div>
+            <p>Home</p>
+            <p>About</p>
+            <p>Course</p>
+            <p>Instructor</p>
+            <p>Blog</p>
+            <p>Contact</p>
+        </div>
+    </div>
+
+    <!-- Body Part -->
+    <div id="container">
+        <div>
+            <!-- Left Part who containe some text -->
+            <p>WELCOME TO STUDYLAB</p>
+            <h1>We Are StudyLab An Online <br> Learning Center</h1>
+            <p>A small river named Duden flows by their place and sipplies it <br> with the nessary regelialia. It is a paradisematic country, in <br> which roasted parts of sentances fly into your mouth.</p>
+            <br>
+            <p>
+                Far far away, behind the word motains, far from the <br> countries Vakalia and Consonantia, there live the blind texts. <br> Separated they live in Bookmarksgrove right at the coast of the <br> Semantics, a large language ocean.
+            </p>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOHikf5IO51lDOWP2kHjWXzZrpru6OpNXrOg&usqp=CAU" alt="">
+                <p>Learn anything from StudyLab, <br> Watch video</p>
+            </div>
+        </div>
+        <div id="card">
+            <!-- Some Card -->
+            <div>
+                <div>
+                    <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/chihuahua-dog-running-across-grass-royalty-free-image-1580743445.jpg?crop=0.655xw:0.990xh;0.107xw,0&resize=640:*" alt="">
+                    <h2>Top Quality Content</h2>
+                    <p>A small river named <br> Duden flows by their <br> place and supplies</p>
+                </div>
+                <div>
+                    <img src="https://27mi124bz6zg1hqy6n192jkb-wpengine.netdna-ssl.com/wp-content/uploads/2020/05/15-Professional-Development-Skills-for-Modern-Teachers-scaled.jpg" alt="">
+                    <h2>High Skilled Instructor</h2>
+                    <p>A small river named <br> Duden flows by their <br> place and supplies</p>
+                </div>
+            </div>
+            
+            <div>
+                <div>
+                    <img src="https://27mi124bz6zg1hqy6n192jkb-wpengine.netdna-ssl.com/wp-content/uploads/2020/05/15-Professional-Development-Skills-for-Modern-Teachers-scaled.jpg" alt="">
+                    <h2>World class & Quiz</h2>
+                    <p>A small river named <br> Duden flows by their <br> place and supplies</p>
+                </div>
+                <div>
+                    <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/chihuahua-dog-running-across-grass-royalty-free-image-1580743445.jpg?crop=0.655xw:0.990xh;0.107xw,0&resize=640:*" alt="">
+                    <h2>Get Certified</h2>
+                    <p>A small river named <br> Duden flows by their <br> place and supplies</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+</body>
+</html>
