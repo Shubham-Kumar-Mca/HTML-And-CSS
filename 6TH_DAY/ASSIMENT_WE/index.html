@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build the Grid Coffee layout using grid and its properties</title>
+
+    <style>
+        body{
+            background-color: #fdf9fb;
+        }
+        #container {
+            width: 80%;
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 150px 150px 150px;
+            gap: 25px;
+        }
+
+        #container>div {
+            box-shadow: 0px 0px 24px 0px rgb(227, 226, 226);
+            background-color: white;
+            border-radius: 10px;
+
+        }
+
+        #container>div>div {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            margin-top: -15px;
+           
+            
+        }
+
+        #container>div>div>h2:last-child {
+            color: #b58733;
+        }
+
+        #container>div>p {
+            width: 90%;
+            color: #c1c0c1;
+            margin: auto;
+            margin-top: -20px;
+            margin-left: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div>
+            <div>
+                <h2>Cappuccino</h2>
+                <h2>$49</h2>
+            </div>
+            <p>Ugage of the internate is becoming more common due to rapid advance.</p>
+        </div>
+        <div>
+            <div>
+                <h2>Americano</h2>
+                <h2>$49</h2>
+            </div>
+            <p>Ugage of the internate is becoming more common due to rapid advance.</p>
+        </div>
+        <div>
+            <div>
+                <h2>Expresso</h2>
+                <h2>$49</h2>
+            </div>
+            <p>Ugage of the internate is becoming more common due to rapid advance.</p>
+        </div>
+        <div>
+            <div>
+                <h2>Machhiato</h2>
+                <h2>$49</h2>
+            </div>
+            <p>Ugage of the internate is becoming more common due to rapid advance.</p>
+        </div>
+        <div>
+            <div>
+                <h2>Mocha</h2>
+                <h2>$49</h2>
+            </div>
+            <p>Ugage of the internate is becoming more common due to rapid advance.</p>
+        </div>
+        <div>
+            <div>
+                <h2>Coffee Latte</h2>
+                <h2>$49</h2>
+            </div>
+            <p>Ugage of the internate is becoming more common due to rapid advance.</p>
+        </div>
+        <div>
+            <div>
+                <h2>Piccolo Latte</h2>
+                <h2>$49</h2>
+            </div>
+            <p>Ugage of the internate is becoming more common due to rapid advance.</p>
+        </div>
+        <div>
+            <div>
+                <h2>Ristretto</h2>
+                <h2>$49</h2>
+            </div>
+            <p>Ugage of the internate is becoming more common due to rapid advance.</p>
+        </div>
+        <div>
+            <div>
+                <h2>Affogato</h2>
+                <h2>$49</h2>
+            </div>
+            <p>Ugage of the internate is becoming more common due to rapid advance.</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
